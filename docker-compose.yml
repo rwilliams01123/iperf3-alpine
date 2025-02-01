@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  iperf3-alpine:
+    container_name: iperf
+    tty: true
+    ports:
+      - 5201:5201
+      - 5201:5201/udp
+    image: taoyou/iperf3-alpine:latest
